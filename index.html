@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interactive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1 class="logo">Ayyan</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="darkModeToggle" class="dark-mode-button">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about" class="hero-section section-hidden">
+            <div class="image-container">
+                <img src="download.jpg" alt="Your Profile Picture" id="profileImage">
+            </div>
+            <div class="intro-container">
+                <h2>Hello there!</h2>
+                <p id="introText">
+                    </p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section section-hidden">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>HTML5, CSS3, JavaScript (ES6+), React.js, Node.js</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Figma, Adobe XD, Wireframing, Prototyping</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <h3>Database Management</h3>
+                    <p>MongoDB, SQL, PostgreSQL</p>
+                </div>
+                 <div class="skill-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Crafting adaptable layouts for all devices</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section section-hidden">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project Alpha</h3>
+                    <p>A web application built with React and Node.js for task management.</p>
+                    <a href="#" class="btn" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project Beta</h3>
+                    <p>Mobile-first e-commerce site showcasing modern CSS techniques.</p>
+                    <a href="#" class="btn" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project Gamma</h3>
+                    <p>Data visualization dashboard using D3.js and Python backend.</p>
+                    <a href="#" class="btn" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section section-hidden">
+            <h2>Get in Touch</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="separator">OR</div>
+
+            <button id="showContactInfoBtn" class="btn contact-info-btn">Show My Contact Info</button>
+
+            <div id="contactDetailsPopup" class="contact-details-popup">
+                <h3>Contact Details</h3>
+                <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p><strong>Address:</strong> 123 Portfolio Lane, Creative City, PC 98765</p>
+                <button id="closeContactInfoBtn" class="close-btn">&times;</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; <span id="currentYear"></span> [Your Name Here]. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
